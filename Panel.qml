@@ -51,7 +51,7 @@ Panel {
   readonly property string detailDescription: (detailTask && detailTask.description) ? String(detailTask.description) : ""
   readonly property string detailTitle: (detailTask && detailTask.title) ? String(detailTask.title) : "\u2026"
 
-  property string captureText: ""
+  property alias captureText: captureField.text
   property bool capturing: false
   // Holds the text for the helper until the capture process has started, because
   // stdin can only be written to a running process.
